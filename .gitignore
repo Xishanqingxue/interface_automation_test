@@ -106,3 +106,4 @@ venv.bak/
 .idea/
 *.log
 spike*.py
+api_test/migrations/*
