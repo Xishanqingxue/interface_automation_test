@@ -27,7 +27,7 @@ class Project(models.Model):
 
     class Meta:
         verbose_name = '项目'
-        verbose_name_plural = '项目'
+        verbose_name_plural = '项目管理'
 
 class Host(models.Model):
     """
@@ -50,8 +50,8 @@ class Host(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'HOST'
-        verbose_name_plural = 'HOST管理'
+        verbose_name = '测试Host地址'
+        verbose_name_plural = '测试Host地址管理'
 
 
 class ApiGroupLevel(models.Model):
@@ -73,7 +73,7 @@ class ApiGroupLevel(models.Model):
 
     class Meta:
         verbose_name = '接口分组'
-        verbose_name_plural = '接口分组'
+        verbose_name_plural = '接口分组管理'
 
 
 class ApiHead(models.Model):
@@ -91,8 +91,8 @@ class ApiHead(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = '请求头'
-        verbose_name_plural = '请求头管理'
+        verbose_name = '接口请求头'
+        verbose_name_plural = '接口请求头管理'
 
 
 class ApiInfo(models.Model):
@@ -121,8 +121,8 @@ class ApiInfo(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = '接口'
-        verbose_name_plural = '接口管理'
+        verbose_name = '接口信息'
+        verbose_name_plural = '接口信息管理'
 
 
 class ApiParameter(models.Model):
@@ -148,8 +148,8 @@ class ApiParameter(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = '请求参数'
-        verbose_name_plural = '请求参数管理'
+        verbose_name = '接口入参'
+        verbose_name_plural = '接口入参管理'
 
 
 class TestCaseGroupLevel(models.Model):
@@ -170,8 +170,8 @@ class TestCaseGroupLevel(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = '用例分组'
-        verbose_name_plural = '用例分组管理'
+        verbose_name = '测试用例分组'
+        verbose_name_plural = '测试用例分组管理'
 
 
 class TestCase(models.Model):
@@ -194,8 +194,8 @@ class TestCase(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = '自动化测试用例'
-        verbose_name_plural = '自动化测试用例'
+        verbose_name = '测试用例'
+        verbose_name_plural = '测试用例管理'
 #
 #
 class TestCaseInfo(models.Model):
@@ -218,5 +218,5 @@ class TestCaseInfo(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = '用例接口'
-        verbose_name_plural = '用例接口管理'
+        verbose_name = '测试用例详情'
+        verbose_name_plural = '测试用例详情管理'
