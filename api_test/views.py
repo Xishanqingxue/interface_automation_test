@@ -22,7 +22,7 @@ def login_action(request):
             response = HttpResponseRedirect('/event_manage/')
             return response
         else:
-            return render(request,'index.html', {'error': 'username or password error!'})
+            return render(request,'index.html', {'error': '用户名或密码错误'})
 
 
 
