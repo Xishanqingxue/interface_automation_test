@@ -17,10 +17,16 @@ from django.contrib import admin
 from django.urls import path
 from api_test import views
 
+
+handler404 = 'api_test.views.page_not_found'
+handler500 = 'api_test.views.page_not_found'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/',views.index),
     path('login_action/',views.login_action),
     path('event_manage/',views.event_manage),
     path('accounts/login/',views.index),
+
 ]
+
+
